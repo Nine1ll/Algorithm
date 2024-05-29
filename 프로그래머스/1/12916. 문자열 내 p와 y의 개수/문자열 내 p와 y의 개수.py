@@ -1,11 +1,3 @@
 def solution(s):
-    pcnt = 0
-    ycnt = 0
-    s = s.lower()
-    for c in s:
-        if c == 'p':
-            pcnt += 1
-        if c == 'y':
-            ycnt += 1
-    answer = True if pcnt == ycnt else False    
+    answer = True if s.lower().count("p") == s.lower().count('y') else False    
     return answer
