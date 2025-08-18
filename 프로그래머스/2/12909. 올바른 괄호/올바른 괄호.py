@@ -1,12 +1,7 @@
 def solution(s):
-    stack = []
-    for char in s:
-        if char == "(":
-            stack.append(char)
-        else:
-            if stack:
-                stack.pop()
-            else:
-                return False
+    answer = True
+    
+    # [실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
+    print('Hello Python')
 
-    return True if not stack else False
+    return True
